@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products Explorer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <input id="searchInput" type="text" placeholder="Search">
+    <select id="categoryFilter"><option value="">All Categories</option></select>
+
+    <div class="container">
+        <div id="statusmessage" class="status-message"></div>
+        <div id="productgrid" class="product-grid"></div>
+    </div>
+    <button id="nextbtn">Next</button>
+    <button id="previous">Previous</button>
+    <select id="sortFilter">
+        <option value="1">Low to Higt</option>
+        <option value="2">Heigt to Low</option>
+        <option value="3">A to Z</option>
+        <option value="4">Z to A</option>
+    </select>
+    <div id="imageModal" class="modal">
+        <button id="closeModal">Close</button>
+        <img id="modalImage">
+        <p id="modalRating" class="rating"></p>
+        <p id="modalCategory" class="category"></p>
+        <p id="modalDescription" class="description"></p>
+        <p id="modalPrice" class="price"></p>
+        <p id="modalTitle" class="title"></p>
+    </div>
+    <script type="module" src="main.js"></script>
+     
+</body>  
+</html> 
